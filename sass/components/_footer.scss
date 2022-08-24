@@ -1,0 +1,173 @@
+.foot {
+  background: $background-hero;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer__acsent-logo{
+  color: $accent-color;
+}
+.footer__adress{
+  font-style: normal;
+  margin-top: 20px;
+  line-height: 1.71;
+}
+.maps {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+
+  color: $background-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubik;
+}
+.maps:hover,
+.maps:focus {
+  color: $accent-color;
+}
+
+
+
+.footer__info-size:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contact-footer {
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+
+  color: $primery-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubik;
+}
+.contact-footer:hover,
+.contact-footer:focus {
+  color: $accent-color;
+}
+
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  // margin-bottom: 20px;
+  color: $background-color;
+}
+.footer-dark {
+  margin-left: 70px;
+}
+
+
+
+.footer-dark__tex {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $background-color;
+}
+.footer-dark__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: $background-color;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubik;
+}
+.social-footer:hover,
+.social-footer:focus {
+  color: $background-color;
+  background-color: $accent-color;
+}
+.social-footer__item {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.footer-dark__set {
+  display: flex;
+  margin-top: 20px;
+}
+.subscrip {
+  margin-left: auto;
+}
+.subscrip__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $background-color;
+  margin-bottom: 20px;
+}
+
+.subscrip__form {
+  border-radius: 4px;
+  display: flex;
+}
+.subscrip__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $background-hero;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  padding-left: 16px;
+  color: $background-color;
+}
+.subscrip__btn {
+  position: relative;
+  margin-left: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  height: 50px;
+  color: $background-color;
+  background-color: $accent-color;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubik;
+}
+.subscrip__btn:hover,
+.subscrip__btn:focus {
+  background-color: $hover-focus-btn;
+}
+
+.subscrip__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe__icon{
+ position: absolute;
+ fill: currentColor;
+ right: 30px;
+}
