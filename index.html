@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--HEDER-->
+    <!-- HEDER-->
     <header class="pages-header">
       <div class="container page-header-container">
         <a class="link pages-header__logo" href="./index.html"><span class="pages-header__logo-acsent">Web</span>Studio</a>
@@ -33,7 +33,7 @@
             <li class="pages-header__item"><a class="link pages-header__link" href="#contact">Контакти</a></li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" data-menu-open>
           <svg class="mobile-menu-open-icon" width="40" height="40">
             <use href="./images/modal-symbol1.svg#icon-burger"></use>
           </svg>
@@ -55,18 +55,45 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
-        <button class="mobile-menu__close-btn">
+      <div class="mobile-menu" data-menu>
+        <button class="mobile-menu__close-btn" data-menu-close>
           <svg class="mobile-menu__close-icon" width="40" height="40">
             <use href="./images/modal-symbol1.svg#icon-close"></use>
           </svg>
         </button>
-        <ul>
-          <li><a href="">link1</a></li>
-          <li><a href="">link2</a></li>
-          <li><a href="">link3</a></li>
-          <li><a href="">link4</a></li>
+        <nav class="mobile-header">
+          <ul class="mobile-header__menu list">
+            <li class="mobile-header__item">
+              <a class="link mobile-header__link pages-header__active" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-header__item">
+              <a class="link mobile-header__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-header__item">
+              <a class="link mobile-header__link" href="#contact">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-header__contact-menu list">
+          
+          <li class="mobile-header__contact-item">
+            <a class="link mobile-header__contact-phone" href="tel:+380961111111">+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-header__contact-item">
+            <a class="link mobile-header__contact-mail" href="mailto:info@devstdio.com"
+              >info@vevstudio.com</a
+            >
+          </li>
         </ul>
+        
+        <ul class="mobile-social list">
+          <li class=" mobile-social__item"><a href="https://www.instagram.com" class=" link mobile-social__link">Instagramm</a></li>
+          <li class=" mobile-social__item"><a href="https://www.twitter.com" class=" link mobile-social__link">Twitter</a></li>
+          <li class=" mobile-social__item"><a href="https://www.facebook.com" class=" link mobile-social__link">Facebook</a></li>
+          <li class=" mobile-social__item"><a href="https://www.linkedin.com" class=" link mobile-social__link">Linkedin</a></li>
+        </ul>
+
       </div>
 
     </header>
@@ -530,7 +557,7 @@
         
       </div>
     </div> -->
-
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
     <!-- <script src="./js/scan.js"></script> -->
   </body>

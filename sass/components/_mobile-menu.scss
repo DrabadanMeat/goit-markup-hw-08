@@ -6,7 +6,18 @@
     top: 0;
     left: 0;
     background-color: $background-color;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms $cubik , visibility 250ms $cubik;
 }
+ .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+ }
+
 .mobile-menu__close-btn{
     position: absolute;
     background-color: transparent;
@@ -15,7 +26,12 @@
     line-height: 0;
     top: 15px;
     right: 15px;
+    transition: fill 250ms $cubik;
 }
 .mobile-menu__close-icon{
     padding: 10px;
+}
+.mobile-menu__close-btn:hover,
+.mobile-menu__close-btn:focus{
+    fill: $accent-color;
 }
